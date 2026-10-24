@@ -2,14 +2,18 @@ using UnityEngine;
 
 public class Heal : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
+   [SerializeField] float heal = 20f;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            Healht healht = other.GetComponent<Healht>();
+            
+            if(healht != null)
+            {
+                healht.addHeal(heal);
+            }
+        }
     }
 }

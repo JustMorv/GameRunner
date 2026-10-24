@@ -7,7 +7,8 @@ public class Healht : MonoBehaviour
     [SerializeField] Slider healhtSlider;
     [SerializeField] float maxHealth  = 100f;
 
-    float currenHealh; 
+    float currenHealh;
+
 
 
     void Start()
@@ -24,6 +25,8 @@ public class Healht : MonoBehaviour
    public void TakeDamege(float damege)
     {
         currenHealh -= damege;
+
+
         UpdateHUD();
     }
     public void addHeal(float heal)
@@ -31,12 +34,6 @@ public class Healht : MonoBehaviour
         currenHealh += heal;
         UpdateHUD();
     }
-
-    void Update()
-    {
-        
-    }
-
 
     void UpdateHUD()
     {
