@@ -3463,7 +3463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91ebd2da0ad8ada448d8c2278fb5b3f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damege: 6
+  damege: 90
 --- !u!1001 &577741911
 PrefabInstance:
   m_ObjectHideFlags: 0
